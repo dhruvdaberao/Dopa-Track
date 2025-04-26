@@ -70,6 +70,7 @@ export default function Home() {
     setActivities([...activities, newActivity]);
     setSelectedActivity("");
     setQuantity("");
+    
   };
 
   const deleteActivity = (index) => {
