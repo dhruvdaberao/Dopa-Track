@@ -428,13 +428,24 @@ body {
   height: auto !important;
 }
 
+/* Graph container */
 .graph-container {
   width: 100%;
-  overflow-x: auto;
+  height: auto;
+  overflow: hidden; /* Prevent overflow outside the container */
 }
 
+/* Graph itself (Canvas or SVG) */
 .graph-container canvas,
 .graph-container svg {
-  min-width: 600px; /* or whatever width your desktop graph needs */
-  height: auto;
+  width: 100%; /* Make the graph stretch to full width */
+  height: auto; /* Maintain aspect ratio */
+  min-width: 600px; /* Optional: Prevent graph from shrinking too much on small screens */
+}
+
+/* Allow horizontal scrolling on mobile if the graph is too wide */
+@media (max-width: 768px) {
+  .graph-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
 }
