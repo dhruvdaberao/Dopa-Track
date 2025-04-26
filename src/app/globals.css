@@ -27,6 +27,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 body {
   font-family: "Poppins", sans-serif;
   background: #f4f4f4;
@@ -132,11 +134,8 @@ body {
 
 .graph-container {
   margin-top: 20px;
-  width: 100%;
-  height: auto;
-  padding: 10px 0;
-  box-sizing: border-box;
-  overflow: hidden; /* Prevent overflow outside the container */
+  width: 80%;
+  margin: auto;
 }
 
 .axis-labels {
@@ -144,8 +143,11 @@ body {
   margin-top: 10px;
 }
 
+
+
 .download-button {
   margin-top: 20px;
+  /* padding: 10px; */
   padding: 10px 15px;
   background-color: green;
   color: white;
@@ -165,6 +167,10 @@ body {
 .spacing2 {
   margin: 50px 0; /* This ensures spacing between sections */
 }
+
+
+
+
 
 /* In globals.css */
 .login-container {
@@ -209,6 +215,12 @@ body {
 .login-container button:hover {
   background-color: #45a049;
 }
+
+
+
+
+
+
 
 /* Make the container responsive */
 .container {
