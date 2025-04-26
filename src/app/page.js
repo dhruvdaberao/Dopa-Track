@@ -60,7 +60,7 @@ export default function Home() {
 
 
   const addActivity = () => {
-    if (!selectedActivity || !quantity) return;
+    if (!selectedActivity || !quantity  || quantity <= 0) return;
     const newActivity = {
       name: selectedActivity,
       type: type,
