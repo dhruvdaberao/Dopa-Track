@@ -411,6 +411,22 @@ body {
   }
 }
 
+/* Make the graph container responsive */
+.graph-container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow-x: auto;
+  padding: 10px 0; /* optional, for some breathing space */
+  box-sizing: border-box;
+}
+
+/* Optional: If your graph inside is canvas or svg, make it full width */
+.graph-container canvas,
+.graph-container svg {
+  width: 100% !important;
+  height: auto !important;
+}
 
 .graph-container {
   width: 100%;
